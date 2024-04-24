@@ -126,55 +126,41 @@ async def language_start_set(call: CallbackQuery, bot: Bot, state: FSMContext):
         conn.commit()
 
         print(language)
-        await generate_animal_captcha(bot, call.message, language)
+        await generate_animal_captcha(bot, call.message)
     except:
         pass
 
 
 import random
 
-async def generate_animal_captcha(bot: Bot, message: Message, language: str):
+async def generate_animal_captcha(bot: Bot, message: Message):
     try:
-        if language == "ru":
 
-            animals = ['🐔', '💣', '🎰', '🎲']
-            correct_animal = random.choice(animals)
-            random.shuffle(animals)
-            key_city_buttons = []
-            for animal in animals:
-                key_city_buttons.append(
-                    [InlineKeyboardButton(text=animal, callback_data=f'check_animal_{animal}_{correct_animal}')])
-            key_city = InlineKeyboardMarkup(inline_keyboard=key_city_buttons)
-            await bot.send_message(message.chat.id, f'Выберите смайл {correct_animal} \n'
-                                                        , reply_markup=key_city)
-        elif language == "en":
-            animals = ['🐔', '💣', '🎰', '🎲']
-            correct_animal = random.choice(animals)
-            random.shuffle(animals)
-            key_city_buttons = []
-            for animal in animals:
-                key_city_buttons.append(
-                    [InlineKeyboardButton(text=animal, callback_data=f'check_animal_{animal}_{correct_animal}_{language}')])
-            key_city = InlineKeyboardMarkup(inline_keyboard=key_city_buttons)
-            await bot.send_message(message.chat.id,
-                                                    f'Select an emoticon {correct_animal}:', reply_markup=key_city)
+        animals = ['🐔', '💣', '🎰', '🎲']
+        correct_animal = random.choice(animals)
+        random.shuffle(animals)
+        key_city_buttons = []
+        for animal in animals:
+            key_city_buttons.append(
+                [InlineKeyboardButton(text=animal, callback_data=f'check_animal_{animal}_{correct_animal}')])
+        key_city = InlineKeyboardMarkup(inline_keyboard=key_city_buttons)
+        await bot.send_message(message.chat.id, f'Выберите смайл {correct_animal} \n'
+                                                f'Select an emoticon {correct_animal}:', reply_markup=key_city)
 
         await bot.delete_message(message.chat.id, message.message_id)
 
     except Exception as e:
         print(repr(e))
-# Обработчик для нажатия на кнопку
 async def on_button_pressed(call: CallbackQuery, bot: Bot):
     try:
         your_animal = call.data.split('_')[2]
 
         true_animal = call.data.split('_')[3]
-        language = call.data.split('_')[4]
 
         if your_animal == true_animal:
             await get_start(call.message, bot)
         else:
-            await generate_animal_captcha(bot, call.message, language)
+            await generate_animal_captcha(bot, call.message)
     except Exception as e:
         print(repr(e))
 
