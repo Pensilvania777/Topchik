@@ -1,0 +1,96 @@
+2024-03-29 17:44:58,969 - ERROR - Произошла ошибка:
+Traceback (most recent call last):
+  File "/Users/aleksandrabervinova/Desktop/TEst/handlers/buy_clad.py", line 328, in buy_gram
+    await bot.send_photo(call.message.chat.id, photo_data, caption=f"Товар: {name_item}\n"
+  File "/Users/aleksandrabervinova/Desktop/TEst/venv/lib/python3.11/site-packages/aiogram/client/bot.py", line 2824, in send_photo
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandrabervinova/Desktop/TEst/venv/lib/python3.11/site-packages/aiogram/client/bot.py", line 441, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandrabervinova/Desktop/TEst/venv/lib/python3.11/site-packages/aiogram/client/session/base.py", line 257, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandrabervinova/Desktop/TEst/venv/lib/python3.11/site-packages/aiogram/client/session/aiohttp.py", line 179, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandrabervinova/Desktop/TEst/venv/lib/python3.11/site-packages/aiogram/client/session/base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: BUTTON_DATA_INVALID
+2024-03-29 17:45:03,628 - ERROR - Произошла ошибка:
+Traceback (most recent call last):
+  File "/Users/aleksandrabervinova/Desktop/TEst/handlers/buy_clad.py", line 328, in buy_gram
+    await bot.send_photo(call.message.chat.id, photo_data, caption=f"Товар: {name_item}\n"
+  File "/Users/aleksandrabervinova/Desktop/TEst/venv/lib/python3.11/site-packages/aiogram/client/bot.py", line 2824, in send_photo
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandrabervinova/Desktop/TEst/venv/lib/python3.11/site-packages/aiogram/client/bot.py", line 441, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandrabervinova/Desktop/TEst/venv/lib/python3.11/site-packages/aiogram/client/session/base.py", line 257, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandrabervinova/Desktop/TEst/venv/lib/python3.11/site-packages/aiogram/client/session/aiohttp.py", line 179, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandrabervinova/Desktop/TEst/venv/lib/python3.11/site-packages/aiogram/client/session/base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: BUTTON_DATA_INVALID
+2024-03-29 17:45:03,849 - ERROR - Произошла ошибка:
+Traceback (most recent call last):
+  File "/Users/aleksandrabervinova/Desktop/TEst/handlers/buy_clad.py", line 328, in buy_gram
+    await bot.send_photo(call.message.chat.id, photo_data, caption=f"Товар: {name_item}\n"
+  File "/Users/aleksandrabervinova/Desktop/TEst/venv/lib/python3.11/site-packages/aiogram/client/bot.py", line 2824, in send_photo
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandrabervinova/Desktop/TEst/venv/lib/python3.11/site-packages/aiogram/client/bot.py", line 441, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandrabervinova/Desktop/TEst/venv/lib/python3.11/site-packages/aiogram/client/session/base.py", line 257, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandrabervinova/Desktop/TEst/venv/lib/python3.11/site-packages/aiogram/client/session/aiohttp.py", line 179, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandrabervinova/Desktop/TEst/venv/lib/python3.11/site-packages/aiogram/client/session/base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: BUTTON_DATA_INVALID
+2024-03-29 17:45:03,908 - ERROR - Произошла ошибка:
+Traceback (most recent call last):
+  File "/Users/aleksandrabervinova/Desktop/TEst/handlers/buy_clad.py", line 328, in buy_gram
+    await bot.send_photo(call.message.chat.id, photo_data, caption=f"Товар: {name_item}\n"
+  File "/Users/aleksandrabervinova/Desktop/TEst/venv/lib/python3.11/site-packages/aiogram/client/bot.py", line 2824, in send_photo
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandrabervinova/Desktop/TEst/venv/lib/python3.11/site-packages/aiogram/client/bot.py", line 441, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandrabervinova/Desktop/TEst/venv/lib/python3.11/site-packages/aiogram/client/session/base.py", line 257, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandrabervinova/Desktop/TEst/venv/lib/python3.11/site-packages/aiogram/client/session/aiohttp.py", line 179, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandrabervinova/Desktop/TEst/venv/lib/python3.11/site-packages/aiogram/client/session/base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: BUTTON_DATA_INVALID
+2024-03-29 17:45:04,127 - ERROR - Произошла ошибка:
+Traceback (most recent call last):
+  File "/Users/aleksandrabervinova/Desktop/TEst/handlers/buy_clad.py", line 328, in buy_gram
+    await bot.send_photo(call.message.chat.id, photo_data, caption=f"Товар: {name_item}\n"
+  File "/Users/aleksandrabervinova/Desktop/TEst/venv/lib/python3.11/site-packages/aiogram/client/bot.py", line 2824, in send_photo
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandrabervinova/Desktop/TEst/venv/lib/python3.11/site-packages/aiogram/client/bot.py", line 441, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandrabervinova/Desktop/TEst/venv/lib/python3.11/site-packages/aiogram/client/session/base.py", line 257, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandrabervinova/Desktop/TEst/venv/lib/python3.11/site-packages/aiogram/client/session/aiohttp.py", line 179, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandrabervinova/Desktop/TEst/venv/lib/python3.11/site-packages/aiogram/client/session/base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: BUTTON_DATA_INVALID
+2024-03-29 17:45:16,086 - ERROR - Telegram server says - Bad Request: BUTTON_DATA_INVALID
