@@ -36,9 +36,7 @@ async def start_reff(message: Message, bot: Bot, state: FSMContext):
             pl = "pl"
             key_language = InlineKeyboardMarkup(inline_keyboard=[
                 [InlineKeyboardButton(text="Русский 🇷🇺", callback_data=f'laungeuage_start_{ru}')],
-                [InlineKeyboardButton(text="Український 🇺🇦", callback_data=f'laungeuage_start_{ua}')],
                 [InlineKeyboardButton(text="English 🇬🇧", callback_data=f'laungeuage_start_{en}')],
-                [InlineKeyboardButton(text="Polski 🇵🇱", callback_data=f'laungeuage_start_{pl}')]
             ])
             await bot.send_message(message.chat.id, "Выберите язык\n"
                                                     "Виберіть мову\n"
