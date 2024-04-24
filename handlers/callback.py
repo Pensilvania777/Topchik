@@ -164,9 +164,8 @@ async def language(call: CallbackQuery, bot: Bot):
         conn.close()
         key_language = InlineKeyboardMarkup(inline_keyboard=[
             [InlineKeyboardButton(text="Русский 🇷🇺", callback_data=f'laungeuage_set_{ru}')],
-            [InlineKeyboardButton(text="Український 🇺🇦", callback_data=f'laungeuage_set_{ua}')],
+
             [InlineKeyboardButton(text="English 🇬🇧", callback_data=f'laungeuage_set_{en}')],
-            [InlineKeyboardButton(text="Polski 🇵🇱", callback_data=f'laungeuage_set_{pl}')],
             [InlineKeyboardButton(text="Назад 🔙", callback_data=f'back_menu_st_')]
 
         ])
